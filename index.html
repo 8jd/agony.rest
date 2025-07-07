@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/lain.css">
+    <title>;(</title>
+</head>
+
+<body>
+    <div id="overlay">
+        <button class="overlaybtn" onclick="removeOverlay()">?</button>
+    </div>
+
+    <img id="img" class="center" src="images/girl.png">
+	
+<div id="text-container">
+  <p id="txt" class="text anim">
+<a href="#agony" style="color: red; text-decoration: none;">#agony.</a>
+  </p>
+</div>
+
+    <audio id="backgroundsong" src="media/song.mp3" loop=""></audio> 
+
+    <script>
+        function removeOverlay() {
+        var overlay = document.getElementById('overlay');
+        var audio = document.getElementById('backgroundsong');
+        var img = document.getElementById('img');
+        var txt = document.getElementById('txt');
+
+        overlay.style.display = 'none';
+        audio.volume = 0.1;
+        audio.play();
+
+        setTimeout(() => {
+            img.style.display = 'block';
+        }, 1000);
+
+        setTimeout(() => {
+            img.classList.add('animated', 'infinite', 'swing')
+        }, 3000);
+
+        setTimeout(() => {
+            txt.style.display = 'inline-block';
+        }, 3000);
+        }
+    </script>
+	  <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+
+
+
+
+</body></html>
