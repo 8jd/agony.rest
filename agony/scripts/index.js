@@ -65,13 +65,13 @@ function memberCall(pfpSrc, textContent, user) {
         const pfpImage = document.getElementById("pfp-image");
 
         displayText.innerHTML = textContent;
-        document.title = "@exile; " + user;
+        document.title = "#agony; " + user;
         pfpImage.src = pfpSrc;
 
         transitionActive = false;
     } else {
         current_page = "member";
-        document.title = "@exile; " + user;
+        document.title = "#agony; " + user;
         const displayText = document.querySelector(".display-text");
         const randomGif = document.getElementById("random-gif");
         const pfpImage = document.getElementById("pfp-image");
@@ -88,14 +88,6 @@ function memberCall(pfpSrc, textContent, user) {
     }
 }
 
-function rot() {
-    memberCall(
-        "assets/rot_icon.png",
-        "<a href='https://numb.lol' target='_blank' style='color: white;'>numb</a>, <a href='https://instagram.com/cyxt' target='_blank' style='color: white;'>instagram</a>",
-        "rot"
-    );
-}
-
 function lain() {
     memberCall(
         "assets/lain_icon.png",
@@ -104,11 +96,11 @@ function lain() {
     );
 }
 
-function op() {
+function cross() {
     memberCall(
-        "assets/op_icon.png",
-        "<a href='https://github.com/tarnishing' target='_blank' style='color: white;'>github</a>, <a href='https://instagram.com/2facd' target='_blank' style='color: white;'>instagram</a>",
-        "op"
+        "assets/cross_icon.png",
+        "<a href='https://instagram.com/rollupvamp' target='_blank' style='color: white;'>instagram</a>",
+        "cross"
     );
 }
 
@@ -123,13 +115,13 @@ function memberCall(pfpSrc, textContent, user) {
         const pfpImage = document.getElementById("pfp-image");
 
         displayText.innerHTML = textContent;
-        document.title = "@exile; " + user;
+        document.title = "#agony; " + user;
         pfpImage.src = pfpSrc;
 
         transitionActive = false;
     } else {
         current_page = "member";
-        document.title = "@exile; " + user;
+        document.title = "#agony; " + user;
         const displayText = document.querySelector(".display-text");
         const randomGif = document.getElementById("random-gif");
         const pfpImage = document.getElementById("pfp-image");
@@ -148,7 +140,7 @@ function memberCall(pfpSrc, textContent, user) {
 function updatePage(htmlContent, pageTitle) {
     if (transitionActive) return;
     transitionActive = true;
-    document.title = "@exile; " + pageTitle;
+    document.title = "#agony; " + pageTitle;
     const displayText = document.querySelector(".display-text");
 
     if (current_page !== "main") {
@@ -172,7 +164,7 @@ function updatePage(htmlContent, pageTitle) {
 
 function about() {
     updatePage(
-        "<a href='https://shame.lol' target='_blank' style='color: white;'>@exile</a> is a cyber collective with a primary focus on coding and various other digital endeavors.",
+        "<a href='https://shame.lol' target='_blank' style='color: white;'>#agony</a> is a cyber collective with a primary focus on coding and various other digital endeavors.",
         "about"
     );
 }
