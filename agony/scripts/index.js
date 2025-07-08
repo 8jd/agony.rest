@@ -91,7 +91,7 @@ function memberCall(pfpSrc, textContent, user) {
 function lain() {
     memberCall(
         "assets/lain_icon.png",
-        "<a href='https://namemc.com/_2' target='_blank' style='color: white;'>namemc</a>, <a href='https://instagram.com/axst' target='_blank' style='color: white;'>instagram</a>, <a href='https://x.com/eternallyagony' target='_blank' style='color: white;'>x</a>",
+        "<a href='https://namemc.com/_2' target='_blank' style='color: white;'>namemc</a>, <a href='https://instagram.com/axst' target='_blank' style='color: white;'>instagram</a>, <a href='https://x.com/eternallyexile' target='_blank' style='color: white;'>x</a>",
         "lain"
     );
 }
@@ -99,7 +99,7 @@ function lain() {
 function cross() {
     memberCall(
         "assets/cross_icon.png",
-        "<a href='https://instagram.com/rollupvamp' target='_blank' style='color: white;'>instagram</a>",
+        "<a href='https://instagram.com/rollupvamp' target='_blank' style='color: white;'>instagram</a>", <a href='https://namemc.com/Percocet' target='_blank' style='color: white;'>namemc</a>, <a href='https://x.com/crossAgony' target='_blank' style='color: white;'>x</a>
         "cross"
     );
 }
