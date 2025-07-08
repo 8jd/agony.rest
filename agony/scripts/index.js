@@ -99,7 +99,7 @@ function lain() {
 function cross() {
     memberCall(
         "assets/cross_icon.png",
-        "<a href='https://instagram.com/rollupvamp' target='_blank' style='color: white;'>instagram</a>, <a href='https://namemc.com/Percocet' target='_blank' style='color: white;'>namemc</a>, <a href='https://x.com/crossAgony' target='_blank' style='color: white;'>x</a>",
+        "<a href='https://instagram.com/rollupvamp' target='_blank' style='color: white;'>instagram</a>, <a href='https://namemc.com/Percocet' target='_blank' style='color: white;'>namemc</a>, <a href='https://x.com/crossAgony' target='_blank' style='color: white;'>x</a>"
         "cross"
     );
 }
