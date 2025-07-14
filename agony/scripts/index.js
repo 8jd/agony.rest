@@ -172,7 +172,7 @@ function updatePage(htmlContent, pageTitle) {
 
 function about() {
     updatePage(
-        "<a href='https://shame.lol' target='_blank' style='color: white;'>#agony</a> is a cyber collective with a primary focus on coding and various other digital endeavors.",
+        "<a href='https://agony.rest' target='_blank' style='color: white;'>#agony</a> is a cyber collective with a primary focus on coding and various other digital endeavors.",
         "about"
     );
 }
@@ -180,7 +180,7 @@ function about() {
 
 
 function site() {
-    window.open("https://shame.lol", "_blank");
+    window.open("https://agony.rest", "_blank");
 }
 
 
