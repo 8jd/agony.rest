@@ -96,11 +96,19 @@ function lain() {
     );
 }
 
-function cross() {
+function crush() {
     memberCall(
-        "assets/cross_icon.png",
-        "<a href='https://namemc.com/Percocet' target='_blank' style='color: white;'>namemc</a>, <a href='https://instagram.com/rollupvamp' target='_blank' style='color: white;'>instagram</a>, <a href='https://x.com/crossAgony' target='_blank' style='color: white;'>x</a>",
-        "cross"
+        "assets/crush_icon.png",
+        "<a href='https://namemc.com/Percocet' target='_blank' style='color: white;'>namemc</a>, <a href='https://instagram.com/rollupvamp' target='_blank' style='color: white;'>instagram</a>, <a href='https://x.com/cr_shing' target='_blank' style='color: white;'>x</a>",
+        "crush"
+    );
+}
+
+function reuts() {
+    memberCall(
+        "assets/reuts_icon.png",
+        "<a href='https://instagram.com/reutsware' target='_blank' style='color: white;'>instagram</a>, <a href='https://soundcloud.com/rreuts' target='_blank' style='color: white;'>soundcloud</a>",
+        "reuts"
     );
 }
 
