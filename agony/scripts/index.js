@@ -112,6 +112,14 @@ function reuts() {
     );
 }
 
+function lano() {
+    memberCall(
+        "assets/lano_icon.png",
+        "<a href='https://instagram.com/ahrin2870' target='_blank' style='color: white;'>instagram</a>, <a href='https://soundcloud.com/zyro-894010995' target='_blank' style='color: white;'>soundcloud</a>",
+        "lano"
+    );
+}
+
 // CORE BUTTONS
 
 function memberCall(pfpSrc, textContent, user) {
