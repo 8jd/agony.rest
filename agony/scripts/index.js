@@ -99,7 +99,7 @@ function lain() {
 function crush() {
     memberCall(
         "assets/crush_icon.png",
-        "<a href='https://namemc.com/Percocet' target='_blank' style='color: white;'>namemc</a>, <a href='https://instagram.com/rollupvamp' target='_blank' style='color: white;'>instagram</a>, <a href='https://x.com/cr_shing' target='_blank' style='color: white;'>x</a>",
+        "<a href='https://namemc.com/Percocet' target='_blank' style='color: white;'>namemc</a>, <a href='https://instagram.com/dbvq' target='_blank' style='color: white;'>instagram</a>, <a href='https://x.com/cr_shing' target='_blank' style='color: white;'>x</a>",
         "crush"
     );
 }
