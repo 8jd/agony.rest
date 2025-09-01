@@ -104,29 +104,11 @@ function tragic() {
     );
 }
 
-function reuts() {
-    memberCall(
-        "assets/reuts_icon.png",
-        "<a href='https://instagram.com/reutsware' target='_blank' style='color: white;'>instagram</a>, <a href='https://soundcloud.com/rreuts' target='_blank' style='color: white;'>soundcloud</a>",
-        "reuts"
-    );
-}
-
-
-function lano() {
-    memberCall(
-        "assets/lano_icon.png",
-        "<a href='https://instagram.com/ahrin2870' target='_blank' style='color: white;'>instagram</a>, <a href='https://soundcloud.com/zyro-894010995' target='_blank' style='color: white;'>soundcloud</a>",
-        "lano"
-    );
-}
-
-function drang() {
-    memberCall(
-        "assets/drang_icon.png",
-        "<a href='https://soundcloud.com/3cf' target='_blank' style='color: white;'>soundcloud</a>",
-        "drang"
-    );
+function drang() {    memberCall(
+    "assets/drang_icon.png",
+    "<a href='https://soundcloud.com/7i8' target='_blank' style='color: white;'>soundcloud</a>, <a href='https://instagram.com/51a1' target='_blank' style='color: white;'>instagram</a> ",
+    "drang"
+);
 }
 
 // CORE BUTTONS
