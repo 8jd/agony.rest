@@ -1,38 +1,76 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html><html lang="en">
+<!-- Mirrored from agony.rest/desktop/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Sep 2025 04:07:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/desktop.css">
   <title>agony.rest</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css/main.css">
 </head>
-
-  
-  
-
-<body>
-  <div id="terminal" class="text-lg">
-    <div>
-      <span class="bracket">┌──(</span><span class="text-red-500">root</span><span class="bracket">㉿</span><span class="text-red-500">agony</span><span class="bracket">)-[</span><span class="text-red-500">~</span><span class="bracket">]</span>
+<body class="crt">
+  <div class="user-panel">
+    <div class="user" onclick="togglePopup(event, this, 'lain', '../static/img/lain.html')">
+      <img src="images/lain.png" alt="lain" class="user-avatar">
+      <span class="username">lain</span>
     </div>
-    <div>
-      <span class="bracket">└─</span><span class="text-red-500">$</span> <span id="typed-command" class="text-white"></span><span class="cursor"></span>
+    <div class="user" onclick="togglePopup(event, this, 'GalaxyArts', '../static/img/Bleed.html')">
+      <img src="images/Bleed.png" alt="Bleed" class="user-avatar">
+      <span class="username">Bleed</span>
+    </div>
+    <div class="user" onclick="togglePopup(event, this, 'Anti', '../static/img/Duko.html')">
+      <img src="images/Duko.png" alt="Duko" class="user-avatar">
+      <span class="username">Duko</span>
+    </div>
+    <div class="user" onclick="togglePopup(event, this, 'Screwed', '../static/img/Serpentine.html')">
+      <img src="images/Serpentine.png" alt="Serpentine" class="user-avatar">
+      <span class="username">Serpentine</span>
+    </div>
+    <div class="user" onclick="togglePopup(event, this, 'Anon', '../static/img/Samer.html')">
+      <img src="images/Samer.png" alt="Samer" class="user-avatar">
+      <span class="username">Samer</span>
     </div>
   </div>
-  <div id="install-output" class="text-white mt-2 ml-4" style="display:none;">
-    <p>Installing users...</p>
-    <p id="install-line-1"></p>
-    <p id="install-line-2"></p>
-    <p id="install-line-3"></p>
-    <p id="install-line-4"></p>
+  <div class="spider">
+    <div class="spider-title">AGONY.REST</div>
+    <div class="spider-moto">"oh the agony"</div>
+    <img src="images/spider.png" alt="Spider">
   </div>
-  <script src="js/main.js"></script>
+  <div class="taskbar">
+    <div class="taskbar-icon" onclick="showTerminal()" role="button" aria-label="Open terminal">
+      <svg role="img" aria-label="Terminal icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 17L10 11L4 5M12 19H20" stroke="#e0e0e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </div>
+    <div class="taskbar-separator"></div>
+    <div class="taskbar-time" id="time-display"></div>
+  </div>
+  <div class="terminal-popup terminal-crt" id="terminal" aria-hidden="true" role="dialog" aria-label="Terminal window">
+    <div class="terminal-header">
+      <div class="terminal-title"><a href="../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="b3c7d6c1dedaddd2dff3d7d6d2c7db9dc1d6c0c7">[email&#160;protected]</a></div>
+      <button class="terminal-close" onclick="hideTerminal()" aria-label="Close terminal">✕</button>
+    </div>
+    <div class="terminal-body">
+      <div class="terminal-ascii" id="terminal-ascii"></div>
+      <div class="terminal-info" id="terminal-info"></div>
+    </div>
+    <div class="terminal-scanlines"></div>
+  </div>
+  <div class="popup popup-crt" id="user-popup" aria-hidden="true" role="dialog" aria-label="User info popup">
+    <div class="popup-header">
+      <div class="popup-title" id="popup-username"></div>
+      <button class="popup-close" onclick="hidePopup()" aria-label="Close popup">✕</button>
+    </div>
+    <div class="popup-content" id="popup-content"></div>
+    <div class="popup-scanlines"></div>
+  </div>
+  <audio id="startup-sound" preload="auto">
+    <source src="media/audio.mp3" type="audio/mpeg">
+  </audio>
+  <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/audio.js"></script>
+  <script src="js/desktop.js"></script>
   <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
-  <script>
-    setTimeout(() => {
-      window.location.href = "/desktop";
-    }, 6000);
-  </script>
 
-<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" data-cf-beacon="{" version":"2024.11.0","token":"b3679e0707274572a3c1604a638161e8","r":1,"server_timing":{"name":{"cfcachestatus":true,"cfedge":true,"cfextpri":true,"cfl4":true,"cforigin":true,"cfspeedbrain":true},"location_startswith":null}}"="" crossorigin="anonymous"></script>
-
-</body></html>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"b3679e0707274572a3c1604a638161e8","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+<!-- Mirrored from agony.rest/desktop/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Sep 2025 04:07:50 GMT -->
+</html>
