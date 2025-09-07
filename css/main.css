@@ -1,0 +1,52 @@
+html, body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.cursor::after {
+    content: "|";
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+    opacity: 0;
+    }
+}
+
+video {
+    max-width: 80vw;
+    max-height: 80vh;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    border: none;
+    box-shadow: none; 
+    border-radius: 0; 
+}
+
+#terminal, #install-output {
+    padding: 1rem;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
+#video-container {
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.bracket {
+    color: #40e0d0;
+}
